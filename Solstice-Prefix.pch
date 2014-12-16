@@ -1,0 +1,30 @@
+//
+//  Solstice-Prefix.pch
+//  SolsticeTestTask
+//
+//  Created by alexander.pranevich on 12/14/14.
+//  Copyright (c) 2014 AP. All rights reserved.
+//
+
+#ifndef SolsticeTestTask_Solstice_Prefix_pch
+#define SolsticeTestTask_Solstice_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#ifdef __OBJC__
+
+#define APP_DELEGATE() ((AppDelegate*)[UIApplication sharedApplication].delegate)
+
+#import "NSDictionary+NullSafe.h"
+#import "AppDelegate.h"
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <CoreData/CoreData.h>
+
+#endif
